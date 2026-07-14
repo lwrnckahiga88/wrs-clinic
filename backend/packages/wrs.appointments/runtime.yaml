@@ -1,0 +1,17 @@
+name: wrs.appointments
+version: 1.0.0
+category: healthcare
+author: WRS Foundation
+description: Appointment booking and clinic queue
+permissions:
+  - appointment.create
+  - appointment.update
+  - appointment.cancel
+database:
+  - appointments
+events:
+  - appointment.booked
+  - appointment.completed
+  - appointment.cancelled
+api:
+  - /appointments

@@ -1,0 +1,11 @@
+name: wrs.reports
+version: 1.0.0
+category: healthcare
+author: WRS Foundation
+description: Auto-generated daily clinic reports
+permissions:
+  - report.generate
+  - report.export
+events: []
+api:
+  - /reports

@@ -1,0 +1,18 @@
+name: wrs.pharmacy
+version: 1.0.0
+category: healthcare
+author: WRS Foundation
+description: Dispensing and inventory management
+permissions:
+  - medication.read
+  - medication.dispense
+  - inventory.update
+database:
+  - medicines
+  - dispenses
+events:
+  - medicine.dispensed
+  - stock.updated
+  - stock.low
+api:
+  - /pharmacy

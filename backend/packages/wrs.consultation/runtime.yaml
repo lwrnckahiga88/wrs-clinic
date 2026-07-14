@@ -1,0 +1,20 @@
+name: wrs.consultation
+version: 1.0.0
+category: healthcare
+author: WRS Foundation
+description: Phone-optimized consultation notes with FHIR mapping
+permissions:
+  - consultation.read
+  - consultation.write
+database:
+  - consultations
+events:
+  - consultation.started
+  - consultation.finished
+fhir_mapping:
+  - Encounter
+  - Observation
+  - Condition
+  - MedicationRequest
+api:
+  - /consultations

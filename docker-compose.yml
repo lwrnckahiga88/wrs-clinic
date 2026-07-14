@@ -1,0 +1,25 @@
+version: '3.8'
+
+services:
+  backend:
+    build: ./backend
+    container_name: wrs-gateway
+    ports:
+      - '4000:4000'
+    volumes:
+      - wrs_db:/app/db
+    environment:
+      - WRS_DB_PATH=/app/db/wrs_clinic.sqlite
+    restart: unless-stopped
+
+  frontend:
+    build: ./frontend
+    container_name: wrs-clinic-pwa
+    ports:
+      - '5173:5173'
+    depends_on:
+      - backend
+    restart: unless-stopped
+
+volumes:
+  wrs_db:

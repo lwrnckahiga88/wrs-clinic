@@ -1,0 +1,18 @@
+{
+  "installed": [
+    "wrs.patient.registration",
+    "wrs.appointments",
+    "wrs.whatsapp.reception",
+    "wrs.consultation",
+    "wrs.pharmacy",
+    "wrs.reports"
+  ],
+  "available": [
+    { "name": "wrs.laboratory", "label": "Laboratory", "tier": "upgrade" },
+    { "name": "wrs.billing", "label": "Billing", "tier": "upgrade" },
+    { "name": "wrs.telemedicine", "label": "Telemedicine", "tier": "upgrade" },
+    { "name": "wrs.inventory", "label": "Inventory", "tier": "upgrade" },
+    { "name": "wrs.insurance", "label": "Insurance", "tier": "upgrade" },
+    { "name": "wrs.radiology", "label": "Radiology", "tier": "upgrade" }
+  ]
+}

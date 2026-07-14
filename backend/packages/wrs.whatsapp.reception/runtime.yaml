@@ -1,0 +1,15 @@
+name: wrs.whatsapp.reception
+version: 1.0.0
+category: healthcare
+author: WRS Foundation
+description: Automated WhatsApp/Telegram front desk — booking without a receptionist
+permissions:
+  - whatsapp.receive
+  - whatsapp.send
+database:
+  - messages
+events:
+  - message.received
+  - message.sent
+api:
+  - /whatsapp

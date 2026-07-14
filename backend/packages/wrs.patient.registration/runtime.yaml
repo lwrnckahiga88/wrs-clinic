@@ -1,0 +1,17 @@
+name: wrs.patient.registration
+version: 1.0.0
+category: healthcare
+author: WRS Foundation
+description: Patient registration and demographics
+permissions:
+  - patient.create
+  - patient.read
+  - patient.update
+database:
+  - patients
+events:
+  - patient.created
+  - patient.updated
+  - patient.deleted
+api:
+  - /patients
