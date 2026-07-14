@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  -webkit-tap-highlight-color: transparent;
+  font-family: 'IBM Plex Sans', sans-serif;
+  background: #FBF7EE;
+  color: #10241F;
+}
+
+h1, h2, h3 {
+  font-family: 'Fraunces', serif;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+
+:focus-visible {
+  outline: 2px solid #0F766E;
+  outline-offset: 2px;
+}
+
+@layer components {
+  /* Small uppercase mono label with a signal dot — used above page titles,
+     mirrors the "eyebrow" pattern from the marketing site. */
+  .eyebrow {
+    @apply font-mono text-[11px] tracking-wider uppercase text-teal-deep flex items-center gap-2;
+  }
+  .eyebrow::before {
+    content: '';
+    @apply w-[6px] h-[6px] rounded-full bg-signal flex-none;
+    box-shadow: 0 0 0 3px rgba(63, 163, 77, 0.18);
+  }
+
+  /* Standard content card — white on paper, hairline rule border. */
+  .card {
+    @apply bg-white border border-rule rounded-wrs shadow-sm;
+  }
+
+  /* Mono uppercase pill tag, e.g. runtime package names / statuses. */
+  .tag-mono {
+    @apply font-mono text-[10px] tracking-wider uppercase px-2 py-1 rounded-full;
+  }
+}

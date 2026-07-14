@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">WRS Clinic</string>
+    <string name="title_activity_main">WRS Clinic</string>
+    <string name="package_name">org.juakali.wrsclinic</string>
+    <string name="custom_url_scheme">org.juakali.wrsclinic</string>
+</resources>
