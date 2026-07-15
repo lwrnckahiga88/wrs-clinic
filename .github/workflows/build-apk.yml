@@ -1,11 +1,11 @@
 name: Build WRS Clinic APK
 
 # Runs the Capacitor Android build on GitHub's runner, which has a full
-# Android SDK + Gradle already installed — this sidesteps needing that
+# Android SDK + Gradle already installed â€” this sidesteps needing that
 # toolchain on Termux/the phone itself, which is the hard part on-device.
 #
 # Repo root IS the frontend project (package.json, capacitor.config.ts,
-# android/ all live at top level) — no working-directory prefix needed.
+# android/ all live at top level) â€” no working-directory prefix needed.
 on:
   workflow_dispatch: {}
   push:
@@ -28,7 +28,8 @@ jobs:
           java-version: '21'
 
       - name: Install web dependencies
-      run: npm install
+        run: npm install
+
       - name: Build web assets
         run: npm run build
 
